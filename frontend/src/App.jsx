@@ -21,7 +21,7 @@ export default function App() {
   const [matches, setMatches] = useState([]);
   const [aiResult, setAiResult] = useState("");
 
-  const API = "http://localhost:5000/api";
+  const API = "https://ai-shortlisting-backend-7k9d.onrender.com";
 
   const fetchCandidates = async () => {
     const res = await axios.get(`${API}/candidates`);
